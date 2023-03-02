@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color: transparent;
+}
+/* talk bubble contents */
+.talktext{
+  padding: 1em;
+	text-align: left;
+  line-height: 1.5em;
+}
+.talktext p{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+} 
+.animation-duration{
+  animation-duration: 4s;
+}
+@layer utilities {
+  .animation-delay-75 {
+    animation-delay: 75ms;
+  }
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+  .animation-delay-5s {
+    animation-delay: 5s;
+  }
+  .animation-delay-10s {
+    animation-delay: 10s;
+  }
+  .animation-delay-15s {
+    animation-delay: 15s;
+  }
+}
+@layer components{
+
+    .container-main{
+        @apply  xl:px-36  md:px-12 px-6 max-w-[1920px]  ;
+    }
+    .navlink-active{
+      @apply  font-bold after:w-full after:h-0.5 after:rounded-sm after:bg-blue-400 after:block;
+    }
+    .navLink{
+      @apply after:absolute after:w-5 after:h-2 after:-bottom-1 after:contents after:opacity-20 hover:after:w-full hover:after:opacity-100 after:bg-slate-400; 
+    }
+    .test{
+      border: 1px red solid;
+    }
+    .chat-bubble{
+      @apply md:-top-[calc(100%+30px)] -top-[calc(100%+10px)]  z-20 md:p-6 p-3 text-white text-base font-normal   -bottom-10 after:absolute  after:-bottom-[36px] md:after:-bottom-[56px] after:w-[20px] absolute min-h-fit bg-primary rounded-md md:after:border-[30px] after:border-[20px] after:border-b-transparent after:border-x-transparent after:border-t-primary border-primary ;
+    }
+    .transparent-line{
+      background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+    }
+}
+#__next{
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+@media screen and (min-width: 800px) {
+  
+
+#__next::-webkit-scrollbar {
+  background-color: transparent;
+  width: 13px;
+}
+.scrollbar::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+.scrollbar::-webkit-scrollbar-track ,#__next::-webkit-scrollbar-track {
+  width: 10px;
+  -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.0);
+}
+
+.scrollbar::-webkit-scrollbar-thumb,#__next::-webkit-scrollbar-thumb {
+background-color: #090634 ;
+}
+
+}
+@layer components{
+  .btn-primary{
+    @apply py-3  md:px-6 px-4 rounded-lg bg-secondary text-white md:text-lg text-base font-semibold;
+  }
+  .btn-tertiary{
+    @apply py-3 md:px-6 px-4  rounded-lg bg-white text-primary md:text-lg text-base  font-semibold;
+  }
+  .btn-secondary{ 
+    @apply py-3 md:px-6 px-4 rounded-lg bg-primary text-white  md:text-lg text-base  font-semibold;
+  }
+  .btn-base{
+    @apply py-2 px-4 text-base font-medium;
+  }
+
+}
+
+@layer base {
+    html {
+      font-family: 'poppins', system-ui, sans-serif;
+    }
+  }
