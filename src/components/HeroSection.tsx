@@ -1,5 +1,7 @@
+import { ModalContext } from "@/pages/_app";
 import { ArrowUturnDownIcon } from "@heroicons/react/24/solid"
 import Image from "next/image";
+import { useContext } from "react";
 const services = [{
     name: "root-canal",
     desc: "Save your infected tooth and alleviate your pain with our expert root canal treatment."
@@ -26,15 +28,16 @@ const services = [{
 },
 ]
 export default function HeroSection() {
+    const [openModal,closeModal] = useContext(ModalContext);
     return <>
-        <div className="container-main mb-20 flex gap-20 min-h-[calc(100vh-200px)] justify-between">
+        <div className="container-main mb-20 flex pt-40 gap-20 min-h-[calc(100vh-200px)] justify-between">
             <div className="w-1/2 flex flex-col  justify-center items-start">
                 <h1 className="text-5xl leading-[1.1] mb-8  text-primary font-semibold">Get a Brighter Smile with the Best Dentist in Gurugram</h1>
                 <p className="font-medium leading-[1.2] mb-5 text-lg  text-gray-500">Welcome to Apollo Dental Gurugram, the leading dental clinic in Gurgaon that is committed to providing
                     exceptional dental care to patients of all ages.</p>
                 <div className="flex gap-8">
-                    <button className="btn-primary"> Contact us</button>
-                    <button className="btn-secondary bg-white text-primary border-2 border-gray-200"> See Details</button>
+                    <button onClick={openModal} className="btn-primary"> Contact us</button>
+                    <a href="#services" className="btn-secondary bg-white text-primary border-2 border-gray-200"> See Details</a>
                 </div>
             </div>
             <div className="w-1/2 flex items-end justify-end">
@@ -43,14 +46,12 @@ export default function HeroSection() {
                 </figure>
             </div>
         </div>
-        <section className="container-main w-full mb-20 flex flex-col justify-center items-center">
+        <section id="services" className="container-main w-full mb-20 flex flex-col justify-center items-center">
             <main className="w-full justify-center flex items-center flex-col mb-10">
                 <span className="mb-2 block text-lg text-center font-semibold text-secondary">
                     Our Services
                 </span>
-                <h2
-                    className="mb-4 text-3xl font-bold text-center sm:text-4xl md:text-[40px]"
-                >
+                <h2 className="mb-4 text-3xl font-bold text-center sm:text-4xl md:text-[40px]" >
                     What We Offer
                 </h2>
                 <p className="text-base text-gray-600 font-medium w-3/4 text-center">

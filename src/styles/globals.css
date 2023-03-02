@@ -68,6 +68,7 @@
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 @media screen and (min-width: 800px) {
   

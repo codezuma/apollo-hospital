@@ -50,7 +50,7 @@ export default function Navbar() {
                 <section className="lg:flex hidden flex-col items-end gap-3">
                     <nav>
                         <ul className="flex gap-5 items-center text-primary">
- <button className="btn-primary text-base  py-2 px-4">Get in touch </button>
+                        <button className="btn-primary text-base  py-2 px-4">Get in touch </button>
                         </ul>
                     </nav>
                 </section>

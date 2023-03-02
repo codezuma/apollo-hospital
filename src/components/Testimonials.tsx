@@ -16,8 +16,7 @@ export default function Testimonials(){
               <p
                 className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
               >
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in some form.
+               See what our patients are saying about us. Real reviews, real smiles.
               </p>
             </div>
           </div>
