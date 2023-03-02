@@ -50,11 +50,7 @@ export default function Navbar() {
                 <section className="lg:flex hidden flex-col items-end gap-3">
                     <nav>
                         <ul className="flex gap-5 items-center text-primary">
-                            <Link className={`font-medium cursor-pointer hover:underLinkne  ${router.pathname == "/services/branding" ? 'navlink-active' : ''}`} href={"/services/branding"}>Branding</Link>
-                            <Link className={`font-medium cursor-pointer hover:underLinkne ${router.pathname == "/services/digital-media" ? 'navlink-active' : ''}`} href={"/services/digital-media"}>Digital Media</Link>
-                            <Link className={`font-medium cursor-pointer hover:underLinkne ${router.pathname == "/services/web-design" ? 'navlink-active' : ''}`} href={"/services/web-design"}>Website</Link>
-                            <Link className={`font-medium cursor-pointer hover:underLinkne ${router.pathname == "/services/video-production" ? 'navlink-active' : ''}`} href={"/services/video-production"}>Video Production</Link>
-                            <button className="btn-primary text-base  py-2 px-4">Get in touch </button>
+ <button className="btn-primary text-base  py-2 px-4">Get in touch </button>
                         </ul>
                     </nav>
                 </section>
