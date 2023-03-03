@@ -65,7 +65,7 @@ export default function Navbar() {
         <nav ref={navbar} className={`mobile-nav px-8 lg:px-20 z-[60] bg-white  fixed h-0  w-full overflow-x-scroll`}>
             <div className="flex justify-between mb-4 md:py-8 py-6  items-center text-secondary ">
                 <span>
-                    <Image width={80} height={80} src={"/logo/logo.svg"} alt={""}></Image>
+                    <Image width={80} height={80} src={"/logo/logo.png"} alt={""}></Image>
                 </span>
                 <span onClick={hideNavbar} className="p-2 rounded-full bg-primary">
                     <XMarkIcon className="w-6 h-6"></XMarkIcon>
