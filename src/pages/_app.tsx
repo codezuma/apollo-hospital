@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <link rel="icon" href="/logo/favicon.svg" />
     </Head>
     <ModalContextProvider>
-      <div className={`relative flex justify-center overflow-x-hidden  items-center flex-col  md:gap-28 gap-24 `}>
+      <div className={`relative flex justify-center overflow-x-hidden  items-center flex-col  md:gap-20 sm:16 gap-8 `}>
         <div className='fixed z-30 flex justify-center md:px-2  w-full top-0'>
           <Navbar></Navbar>
         </div>

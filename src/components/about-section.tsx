@@ -10,7 +10,7 @@ export default function  AboutSection(){
                     className="mb-4 text-3xl font-bold text-start sm:text-4xl md:text-[40px]"
                 >
 We are committed to your smile.                </h2>
-                <p className="text-base text-gray-600 font-medium w-3/4 text-start">
+                <p className="text-base text-gray-600 font-medium md:w-3/4 w-full text-start">
                 At Apollo Dental Gurugram, we understand the importance of maintaining optimal oral health, and we are committed to providing personalized care to meet the unique needs of each patient. We are the best dental clinic in Gurgaon because of our commitment to providing compassionate and professional care, and we strive to create a welcoming and comfortable environment for every patient. </p>
             </main>
             <figure className="overflow-hidden rounded-lg">
