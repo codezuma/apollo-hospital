@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useContext, useEffect, useRef, useState } from "react";
 import { useRouter } from 'next/router';
+import { ModalContext } from "@/pages/_app";
 
 
 
@@ -11,6 +12,7 @@ export default function Navbar() {
     const navbar = useRef<HTMLElement>(null);
     const navbarAfter = useRef<HTMLDivElement>(null);
     const router = useRouter();
+    const [openModal,closeModal] = useContext(ModalContext);
 
     useEffect(() => {
         let container = document.getElementById('__next')!;
@@ -50,7 +52,7 @@ export default function Navbar() {
                 <section className="lg:flex hidden flex-col items-end gap-3">
                     <nav>
                         <ul className="flex gap-5 items-center text-primary">
-                        <button className="btn-primary text-base  py-2 px-4">Get in touch </button>
+                        <button onClick={openModal} className="btn-primary text-base  py-2 px-4">Get in touch </button>
                         </ul>
                     </nav>
                 </section>
