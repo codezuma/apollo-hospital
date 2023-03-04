@@ -33,12 +33,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\
             ["autoprefixer", "virtual:deecfd4a874f75a4205f7c73d30f43b57c8bc68f691057ada463e3edfb496d079eb8a30f3c2ce28d89796f758c93485f58eb819d1d9e42a7eec71d133e4dbfe5#npm:10.4.13"],\
+            ["dotenv", "npm:16.0.3"],\
             ["eslint", "npm:8.35.0"],\
             ["eslint-config-next", "virtual:deecfd4a874f75a4205f7c73d30f43b57c8bc68f691057ada463e3edfb496d079eb8a30f3c2ce28d89796f758c93485f58eb819d1d9e42a7eec71d133e4dbfe5#npm:13.2.3"],\
             ["next", "virtual:deecfd4a874f75a4205f7c73d30f43b57c8bc68f691057ada463e3edfb496d079eb8a30f3c2ce28d89796f758c93485f58eb819d1d9e42a7eec71d133e4dbfe5#npm:13.2.3"],\
+            ["nodemailer", "npm:6.9.1"],\
             ["postcss", "npm:8.4.21"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:deecfd4a874f75a4205f7c73d30f43b57c8bc68f691057ada463e3edfb496d079eb8a30f3c2ce28d89796f758c93485f58eb819d1d9e42a7eec71d133e4dbfe5#npm:18.2.0"],\
+            ["tailgrids", "npm:1.1.7"],\
             ["tailwindcss", "virtual:deecfd4a874f75a4205f7c73d30f43b57c8bc68f691057ada463e3edfb496d079eb8a30f3c2ce28d89796f758c93485f58eb819d1d9e42a7eec71d133e4dbfe5#npm:3.2.7"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=ad5954"]\
           ],\
@@ -677,12 +680,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.0.28"],\
             ["@types/react-dom", "npm:18.0.11"],\
             ["autoprefixer", "virtual:deecfd4a874f75a4205f7c73d30f43b57c8bc68f691057ada463e3edfb496d079eb8a30f3c2ce28d89796f758c93485f58eb819d1d9e42a7eec71d133e4dbfe5#npm:10.4.13"],\
+            ["dotenv", "npm:16.0.3"],\
             ["eslint", "npm:8.35.0"],\
             ["eslint-config-next", "virtual:deecfd4a874f75a4205f7c73d30f43b57c8bc68f691057ada463e3edfb496d079eb8a30f3c2ce28d89796f758c93485f58eb819d1d9e42a7eec71d133e4dbfe5#npm:13.2.3"],\
             ["next", "virtual:deecfd4a874f75a4205f7c73d30f43b57c8bc68f691057ada463e3edfb496d079eb8a30f3c2ce28d89796f758c93485f58eb819d1d9e42a7eec71d133e4dbfe5#npm:13.2.3"],\
+            ["nodemailer", "npm:6.9.1"],\
             ["postcss", "npm:8.4.21"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:deecfd4a874f75a4205f7c73d30f43b57c8bc68f691057ada463e3edfb496d079eb8a30f3c2ce28d89796f758c93485f58eb819d1d9e42a7eec71d133e4dbfe5#npm:18.2.0"],\
+            ["tailgrids", "npm:1.1.7"],\
             ["tailwindcss", "virtual:deecfd4a874f75a4205f7c73d30f43b57c8bc68f691057ada463e3edfb496d079eb8a30f3c2ce28d89796f758c93485f58eb819d1d9e42a7eec71d133e4dbfe5#npm:3.2.7"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=ad5954"]\
           ],\
@@ -1164,7 +1170,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["debug", "virtual:65bed195431eadffc59e2238eb20cc12d9a1665bc7458ce780a9320ff795091b03cb5c4c2094938315ddd967b5b02c0f1df67b3ed435c69b7457092b7cc06ed8#npm:3.2.7"],\
             ["@types/supports-color", null],\
-            ["ms", "npm:2.1.3"],\
+            ["ms", "npm:2.1.2"],\
             ["supports-color", null]\
           ],\
           "packagePeers": [\
@@ -1310,6 +1316,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["doctrine", "npm:3.0.0"],\
             ["esutils", "npm:2.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["dotenv", [\
+        ["npm:16.0.3", {\
+          "packageLocation": "./.yarn/cache/dotenv-npm-16.0.3-4cc29121dc-afcf03f373.zip/node_modules/dotenv/",\
+          "packageDependencies": [\
+            ["dotenv", "npm:16.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3234,6 +3249,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["nodemailer", [\
+        ["npm:6.9.1", {\
+          "packageLocation": "./.yarn/cache/nodemailer-npm-6.9.1-5159f56f86-b1b9670afc.zip/node_modules/nodemailer/",\
+          "packageDependencies": [\
+            ["nodemailer", "npm:6.9.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["nopt", [\
         ["npm:6.0.0", {\
           "packageLocation": "./.yarn/cache/nopt-npm-6.0.0-5ea8050815-82149371f8.zip/node_modules/nopt/",\
@@ -3912,7 +3936,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/rimraf-npm-3.0.2-2cb7dac69a-87f4164e39.zip/node_modules/rimraf/",\
           "packageDependencies": [\
             ["rimraf", "npm:3.0.2"],\
-            ["glob", "npm:7.2.3"]\
+            ["glob", "npm:7.1.7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4258,6 +4282,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["synckit", "npm:0.8.5"],\
             ["@pkgr/utils", "npm:2.3.1"],\
             ["tslib", "npm:2.5.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["tailgrids", [\
+        ["npm:1.1.7", {\
+          "packageLocation": "./.yarn/cache/tailgrids-npm-1.1.7-9ce235aad3-e899d40732.zip/node_modules/tailgrids/",\
+          "packageDependencies": [\
+            ["tailgrids", "npm:1.1.7"]\
           ],\
           "linkType": "HARD"\
         }]\
