@@ -4,10 +4,10 @@ import { useContext } from "react"
 export default function CTASection() {
     const [openModal,closeModal] = useContext(ModalContext);
     return <>
-        <section className="container-main py-20 lg:py-[120px]">
+        <section className="container-main py-20 ">
             <div className=" mx-auto">
                 <div
-                    className="relative z-10 overflow-hidden rounded bg-secondary py-12 px-8 md:p-[70px]"
+                    className="relative z-10 overflow-hidden rounded bg-[#2582A1] py-12 px-8 md:p-[70px]"
                 >
                     <div className="-mx-4 flex flex-wrap items-center">
                         <div className="w-full px-4 lg:w-3/4">
@@ -22,7 +22,7 @@ export default function CTASection() {
                         </div>
                         <div className="w-full px-4 lg:w-1/4">
                             <div className="flex flex-wrap lg:justify-end">
-                                <a onClick={openModal} className="my-1 cursor-pointer inline-block rounded bg-[#13C296] py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9" > Contact us Now
+                                <a onClick={openModal} className="my-1 cursor-pointer inline-block rounded bg-[#FDB931] py-4 px-6 text-base font-medium text-white transition hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9" > Contact us Now
                                 </a>
                             </div>
                         </div>

@@ -36,7 +36,7 @@ export default async function handler(req: NextApiRequest,res: NextApiResponse) 
 
     try {
       const {text,html} = generateEmailContent(data);
-      const response =   await transporter.sendMail({to:'patidarchandresh2002@gmail.com,Info@elf31.com',subject:'Form Filed on site Apollogurgaon.in',text:text,html:html});
+      const response =   await transporter.sendMail({to:`${data.email},Info@elf31.com`,subject:'Form Filed on site Apollogurgaon.in',text:text,html:html});
       console.log(response);
       return res.status(200).json({ success: true });
     } catch (err:any) {

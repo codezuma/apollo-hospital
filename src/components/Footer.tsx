@@ -1,6 +1,7 @@
+import Image from "next/image"
 export default function Footer(){
     return <>
-     <footer className="relative container-main z-10 bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+     <footer className="relative container-main w-full z-10 bg-white ">
       <div className="container mx-auto">
         <div className="-mx-4 flex justify-between flex-wrap">
           <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
@@ -8,7 +9,8 @@ export default function Footer(){
               <a
                 className="mb-6 inline-block max-w-[160px]"
               >
-                <img
+                <Image width={100}
+                height={100}
                   src="/logo/logo.png"
                   alt="logo"
                   className="max-w-full"

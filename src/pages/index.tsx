@@ -8,6 +8,7 @@ import AboutSection from '@/components/about-section'
 import CTASection from '@/components/cta-section'
 import Testimonials from '@/components/Testimonials'
 import Footer from '@/components/Footer'
+import ContactForm from '@/components/ContactForm'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function Home() {
       </Head>
       <HeroSection></HeroSection>
       <AboutSection></AboutSection>
+      <ContactForm></ContactForm>
       <CTASection></CTASection>
       <Testimonials></Testimonials>
     </>
