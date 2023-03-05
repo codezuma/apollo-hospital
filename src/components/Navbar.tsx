@@ -49,20 +49,20 @@ export default function Navbar() {
                 <Link href={'/'} className="px-2">
                     <Image src={"/logo/logo.png"} className="w-20 md:w-28" width={120} height={60} alt={"elf31-logo"} />
                 </Link>
-                <section className="lg:flex hidden flex-col items-end gap-3">
+                <section className="lg:flex  flex-col items-end gap-3">
                     <nav>
                         <ul className="flex gap-5 items-center text-primary">
                         <button onClick={openModal} className="btn-primary text-base  py-2 px-4">Get in touch </button>
                         </ul>
                     </nav>
                 </section>
-                <div onClick={showNavbar} className=" lg:hidden flex justify-center gap-4">
+                <div onClick={showNavbar} className=" hidden  justify-center gap-4">
                     <Bars2Icon className="w-10 h-10 text-primary"></Bars2Icon>
                 </div>
             </nav>
         </div>
 
-        <nav ref={navbar} className={`mobile-nav px-8 lg:px-20 z-[60] bg-white  fixed h-0  w-full overflow-x-scroll`}>
+   {/*      <nav ref={navbar} className={`mobile-nav px-8 lg:px-20 z-[60] bg-white  fixed h-0  w-full overflow-x-scroll`}>
             <div className="flex justify-between mb-4 md:py-8 py-6  items-center text-secondary ">
                 <span>
                     <Image width={80} height={80} src={"/logo/logo.png"} alt={""}></Image>
@@ -122,5 +122,5 @@ export default function Navbar() {
             </ul>
         </nav>
         <div ref={navbarAfter} className={`z-40 fixed  w-full bg-secondary h-0 overflow-x-scroll `}></div>
-    </>
+    */} </>
 }
