@@ -13,8 +13,3 @@ export const transporter =   nodemailer.createTransport({
     pass:pass,
   },
 });
-
-export const mailOptions = { 
-  to: 'patidarchandresh2002@gmail.com',
-};
-  
