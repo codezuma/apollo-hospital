@@ -10,7 +10,7 @@ const CONTACT_MESSAGE_FIELDS = {
 };
 interface requestData{
   name: string,
-  email: string,
+  email: string,  
   phoneNumber: string,
   message: string,
 }
