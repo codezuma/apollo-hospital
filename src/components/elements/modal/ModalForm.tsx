@@ -27,7 +27,7 @@ export default function ModalForm(props: any) {
   const sendMail = async (event: FormEvent) => {
     event.preventDefault();
     console.log(formData);
-
+    
     try {
       await sendContactForm(formData);
       toast.success('Form Submitted');
