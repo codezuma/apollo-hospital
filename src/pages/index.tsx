@@ -9,10 +9,17 @@ import CTASection from '@/components/cta-section'
 import Testimonials from '@/components/Testimonials'
 import Footer from '@/components/Footer'
 import ContactForm from '@/components/ContactForm'
+import { useContext, useEffect } from 'react'
+import { ModalContext } from './_app'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [openModal,closeModal] = useContext(ModalContext);
+  useEffect(()=>{
+    openModal(true);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[])
   return (
     <>
       <Head>

@@ -4,10 +4,10 @@ import ModalForm from "./ModalForm";
 
 // useModal.tsx
 export function ModalContextProvider({ children }: any) {
-  const [modal, setModal] = useState();
+  const [modal, setModal] = useState<boolean>(false);
 
-  const openModal = (modalProps: any) => setModal(modalProps);
-  const closeModal = () => setModal(undefined);
+  const openModal = (a:boolean) => setModal(a);
+  const closeModal = () => setModal(false);
 
   return (
       <ModalContext.Provider value={[openModal, closeModal]}>
