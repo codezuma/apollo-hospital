@@ -19,8 +19,8 @@ export default function App({ Component, pageProps }: AppProps) {
     </Head>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N63DNQR"
 height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
-    <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11108610629"></Script>
-<Script id="google-analytics" strategy="afterInteractive" >{`
+{/*     <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11108610629"></Script>
+ */}{/* <Script id="google-analytics" strategy="afterInteractive" >{`
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments)}
@@ -29,7 +29,7 @@ height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></nos
   gtag('config', 'AW-11108610629');
   gtag('event', 'conversion', {send_to: 'AW-11108610629/H4wJCISo5I8YEMXk_7Ap'});
  `} 
-</Script>
+</Script> */}
 <Script id="google-analytics" strategy="afterInteractive" >{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
