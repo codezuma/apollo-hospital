@@ -47,7 +47,7 @@ export default function Navbar() {
         <div className={`w-full sticky justify-center flex ${visible ? 'bg-transparent' : "bg-slate-100 shadow-md"}`}>
             <nav className={`container-main md:py-5 py-3 flex justify-between z-[60]    top-0 items-center w-full `}>
                 <Link href={'/'} className="px-2">
-                    <Image src={"/logo/logo.png"} className="w-20 md:w-28" width={120} height={60} alt={"elf31-logo"} />
+                    <Image src={"/logo/logo.png"} className="w-20 md:w-32" width={120} height={60} alt={"elf31-logo"} />
                 </Link>
                 <section className="lg:flex  flex-col items-end gap-3">
                     <nav>

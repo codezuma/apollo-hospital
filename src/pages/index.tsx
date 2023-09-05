@@ -12,14 +12,33 @@ import ContactForm from '@/components/ContactForm'
 import { useContext, useEffect } from 'react'
 import { ModalContext } from './_app'
 
-const inter = Inter({ subsets: ['latin'] })
+
+const testimonialsData = [
+  {
+    name: 'Neha Gupta',
+    rating: 5,
+    content: 'Amazing experience, painless procedure, highly recommend this clinic for all dental needs.',
+  },
+  {
+    name: 'Ridhi Varshney',
+    rating: 4,
+    content: 'Dr. Gaurav is the best dentist in Gurugram, and he always takes the time to explain my treatment options and answer any questions that I may have.',
+  },
+  {
+    name: 'Mr. Raghav Madan',
+    rating: 5,
+    content: 'I have been going to Apollo Dental Gurugram for years now, and I am always impressed by the high level of care and professionalism that I receive.',
+  },
+];
+
+
 
 export default function Home() {
-  const [openModal,closeModal] = useContext(ModalContext);
-  useEffect(()=>{
+  const [openModal, closeModal] = useContext(ModalContext);
+  useEffect(() => {
     openModal(true);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
   return (
     <>
       <Head>
@@ -32,7 +51,7 @@ export default function Home() {
       <AboutSection></AboutSection>
       <ContactForm></ContactForm>
       <CTASection></CTASection>
-      <Testimonials></Testimonials>
+      <Testimonials testimonials={testimonialsData} />
     </>
   )
 }

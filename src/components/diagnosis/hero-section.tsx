@@ -9,19 +9,19 @@ const services = [
         "desc": "Our cutting-edge X-ray facilities provide accurate and detailed imaging, ensuring swift and precise diagnoses."
     },
     {
-        "name": "ultrasound",
+        "name": "Ultrasound",
         "desc": "Trust our skilled technicians and experienced radiologists for clear and comprehensive ultrasound services."
     },
     {
-        "name": "echo-services",
+        "name": "Echo-services",
         "desc": "We specialize in echocardiography, offering thorough assessments of your heart's structure and function."
     },
     {
-        "name": "ecg-and-tmt",
+        "name": "ECG-and-TMT",
         "desc": "Our Electrocardiogram (ECG) and Treadmill Test (TMT) services help in early detection of heart-related issues."
     },
     {
-        "name": "podia-and-fundus-exams",
+        "name": "Podia-and-fundus-exams",
         "desc": "We offer specialized podiatric diagnostics and fundus examinations for comprehensive foot and eye health assessments."
     },
     {
@@ -44,18 +44,17 @@ export default function HeroSection() {
 
             </div>
             <div className="md:w-1/2 w-full flex flex-col  justify-center items-start">
-                <h1 className="text-4xl leading-[1.1] mb-8  text-primary font-semibold">Your Trusted Destination for Advanced Medical Diagnostics
+                <h1 className="text-5xl leading-[1.1] mb-8  text-primary font-semibold">Where You Can Get State-of-the-Art Health Tests You Can Trust!
                 </h1>
-                <p className="font-medium leading-[1.2] mb-5 text-lg  text-gray-500"> {`Apollo Clinic Gurugram is your go-to healthcare partner for a comprehensive range of diagnostic services, conveniently located in Gurugram. Whether you're searching for "diagnostics near me" or "diagnostics services in Gurugram," we have you covered.
-                    .`}</p>
+                <p className="font-medium leading-[1.2] mb-5 text-lg  text-gray-500"> {`Apollo Clinic Gurugram is the ideal healthcare destination, offering a wide spectrum of diagnostic services in a convenient Gurugram location. Whether you're in need of "x-ray services nearby" or "ultrasound services in Gurugram," rest assured, we've got you covered.`}</p>
                 <div className="flex gap-8">
                     <button onClick={openModal} className="btn-primary"> Contact us</button>
                     <a href="#services" className="btn-secondary bg-white text-primary border-2 border-gray-200"> See Details</a>
                 </div>
             </div>
             <div className="md:w-1/2 w-full flex   items-end justify-end">
-                <figure className="overflow-hidden rounded-3xl">
-                    <Image alt="hero-image" className="rounded-3xl" src="/hero-image.png" height={1200} width={1200}></Image>
+                <figure className="overflow-hidden rounded-xl">
+                    <Image alt="hero-image" className="rounded-3xl" src="/images/hero-image.png" height={1200} width={1200}></Image>
                 </figure>
             </div>
         </div>
@@ -68,8 +67,7 @@ export default function HeroSection() {
                     What We Offer
                 </h2>
                 <p className="text-base text-gray-600 font-medium md:w-3/4 w-full md:text-center text-start ">
-                    Our Comprehensive Diagnostic Services Include:
-                </p>
+                    We provide an extensive range of services, including X-ray, ultrasound, echo, ECG, and TMT services. Additionally, we offer specialized fundus photography examination services to meet all your diagnostic requirements.                </p>
             </main>
             <section className="grid-cols-12 grid gap-y-10  lg:gap-12 md:gap-4 gap-2 md:gap-y-0 w-full">
                 {services.map((service, index) => <ServiceCard key={index} index={index} service={service} />)}
