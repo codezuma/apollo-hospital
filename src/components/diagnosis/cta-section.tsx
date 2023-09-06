@@ -18,7 +18,7 @@ export default function CTASection() {
                                 className="mb-6 text-xl font-semibold leading-tight text-white sm:mb-8  lg:mb-0"
                             >
                                 Ready to take control of your health? Schedule your diagnostic tests with us today. For more information, visit
-                                <a href="www.apollogurugram.in">www.apollogurugram.in</a>.{` Your health is our priority, and we're here to ensure it.`}
+                                <a href="www.apollogurugram.in">&nbsp; &nbsp; www.apollogurugram.in &nbsp;</a>.{` Your health is our priority, and we're here to ensure it.`}
                             </h2>
                         </div>
                         <div className="w-full px-4 lg:w-1/4">
