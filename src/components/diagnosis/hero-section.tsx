@@ -6,30 +6,37 @@ import { useContext } from "react";
 const services = [
     {
         "name": "x-ray-services",
+        "img": "x-ray-services",
         "desc": "Our cutting-edge X-ray facilities provide accurate and detailed imaging, ensuring swift and precise diagnoses."
     },
     {
         "name": "Ultrasound",
+        "img": "ultrasound",
         "desc": "Trust our skilled technicians and experienced radiologists for clear and comprehensive ultrasound services."
     },
     {
         "name": "Echo-services",
+        "img": "echo-services",
         "desc": "We specialize in echocardiography, offering thorough assessments of your heart's structure and function."
     },
     {
         "name": "ECG-and-TMT",
+        "img": "ecg-and-tmt",
         "desc": "Our Electrocardiogram (ECG) and Treadmill Test (TMT) services help in early detection of heart-related issues."
     },
     {
         "name": "Podia-and-fundus-exams",
+        "img": "podia-and-fundus-exams",
         "desc": "We offer specialized podiatric diagnostics and fundus examinations for comprehensive foot and eye health assessments."
     },
     {
         "name": "blood-tests",
+        "img": "blood-tests",
         "desc": "Whether it's routine check-ups or specific health concerns, we provide a wide range of blood tests to meet your needs."
     },
     {
         "name": "home-sample-collection",
+        "img": "home-sample-collection",
         "desc": "Can't visit our clinic? No problem! We offer hassle-free home sample collection services, bringing healthcare to your doorstep."
     }
 ];
@@ -76,12 +83,12 @@ export default function HeroSection() {
     </>
 }
 
-function ServiceCard({ service, index }: { service: { name: string, desc: string }, index: number }) {
+function ServiceCard({ service, index }: { service: { name: string, img: string, desc: string }, index: number }) {
     return <>
 
         <div className="service  bg-white border md:col-span-4 col-span-12 border-gray-200 rounded-lg shadow  md:last-of-type:flex  md:last-of-type:col-span-6 md:last-of-type:col-start-4">
             <a href="" className="flex-1">
-                <Image height={500} width={500} className={`rounded-t-lg w-full h-[300px]  object-cover  ${(index == 6) ? "md:h-full" : ""}`} src={`/images/${service.name}.jpg`} alt="" />
+                <Image height={500} width={500} className={`rounded-t-lg w-full h-[300px]  object-cover  ${(index == 6) ? "md:h-full" : ""}`} src={`/images/${service.img}.jpg`} alt="" />
             </a>
             <div className="p-5 flex-1">
                 <a href="#">
