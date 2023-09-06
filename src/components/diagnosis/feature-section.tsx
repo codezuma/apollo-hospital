@@ -1,20 +1,21 @@
 import { CogIcon, MapIcon, MapPinIcon, UserIcon } from '@heroicons/react/24/solid';
+import Image from 'next/image';
 import React from 'react';
 
 const apolloClinicData = [
     {
         title: "Advanced Technology",
         description: "We invest in the latest medical technology to ensure accurate and reliable results.",
-        icon:<CogIcon/>
+        img:'/images/advance.jpg'
     },
     {
         title: "Experienced Professionals",
-        icon:<UserIcon/>,
+        img:'/images/professional.jpg',
         description: "Our team of expert healthcare professionals is dedicated to your well-being."
     },
     {
         title: "Convenient Location",
-        icon:<MapPinIcon/>,
+        img:'/images/location.jpg',
         description: "Located in Gurugram, we are easily accessible for all your healthcare needs."
     }
 ];
@@ -32,9 +33,9 @@ const FeatureSection = () => {
                 <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
                     {apolloClinicData.map((feature, index) => (
                         <div key={index}>
-                            <div className="flex justify-center items-center mb-4 w-16 h-16 rounded-full bg-primary-100 text-primary">
-                                {feature.icon}
-                            </div>
+                            <a href="" className="flex-1">
+                                <Image height={500} width={500} className={`rounded-t-lg w-full h-[200px]  object-cover  ${(index == 6) ? "md:h-full" : ""}`} src={feature.img} alt="" />
+                            </a>
                             <h3 className="mb-2 text-2xl font-semibold">{feature.title}</h3>
                             <p className="text-gray-500 text-lg">{feature.description}</p>
                         </div>

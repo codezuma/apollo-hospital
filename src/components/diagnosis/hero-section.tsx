@@ -51,6 +51,7 @@ export default function HeroSection() {
 
             </div>
             <div className="md:w-1/2 w-full flex flex-col  justify-center items-start">
+                <h1 className="text-2xl text-secondary leading-[1.1] mb-2 font-semibold">Apollo Clinic Gurugram</h1>
                 <h1 className="text-5xl leading-[1.1] mb-8  text-primary font-semibold">Where You Can Get State-of-the-Art Health Tests You Can Trust!
                 </h1>
                 <p className="font-medium leading-[1.2] mb-5 text-lg  text-gray-500"> {`Apollo Clinic Gurugram is the ideal healthcare destination, offering a wide spectrum of diagnostic services in a convenient Gurugram location. Whether you're in need of "x-ray services nearby" or "ultrasound services in Gurugram," rest assured, we've got you covered.`}</p>
@@ -60,8 +61,8 @@ export default function HeroSection() {
                 </div>
             </div>
             <div className="md:w-1/2 w-full flex   items-end justify-end">
-                <figure className="overflow-hidden rounded-xl">
-                    <Image alt="hero-image" className="rounded-3xl" src="/images/hero-image.png" height={1200} width={1200}></Image>
+                <figure className="overflow-hidden mb-2 p-2 rounded-xl">
+                    <Image alt="hero-image" src="/images/hero-image.png" height={500} width={500}></Image>
                 </figure>
             </div>
         </div>
