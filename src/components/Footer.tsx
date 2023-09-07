@@ -19,7 +19,7 @@ export default function Footer(){
               <address className="mb-7 text-base text-primary font-semibold not-italic">
               A-26/1 Second Floor, Adjoining Mega Mall,
 DLF Phase-1, Golf Course Road,
-Gurugram-122022
+Gurugram-122002
 
               </address>
               <p className="flex items-center text-sm font-medium text-primary">

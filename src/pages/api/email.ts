@@ -8,13 +8,13 @@ const CONTACT_MESSAGE_FIELDS = {
   phoneNumber: '',
   message: "Message",
 };
-interface requestData{
+interface requestData {
   name: string,
-  email: string,  
+  email: string,
   phoneNumber: string,
   message: string,
 }
-const generateEmailContent = (data:requestData) => {
+const generateEmailContent = (data: requestData) => {
   const stringData = `name ${data.name} , email ${data.email} phoneNumber ${data.phoneNumber}`;
   const htmlData = Object.entries(data).reduce((str, [key, val]) => {
     return (str += `<h3 class="form-heading" align="left">${key}</h3><p class="form-answer" align="left">${val}</p>`);
@@ -26,7 +26,7 @@ const generateEmailContent = (data:requestData) => {
   };
 };
 
-export default async function handler(req: NextApiRequest,res: NextApiResponse) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === "POST") {
     const data = req.body;
     console.log(data);
@@ -35,11 +35,11 @@ export default async function handler(req: NextApiRequest,res: NextApiResponse) 
     }
 
     try {
-      const {text,html} = generateEmailContent(data);
-    const response =   await transporter.sendMail({to:`${ process.env.EMAIL},apolloclinicsgurgaon@gmail.com,info@elf31.com`,subject:'Form Filed on site Apollogurgaon.in',text:text,html:html});
+      const { text, html } = generateEmailContent(data);
+      const response = await transporter.sendMail({ to: `${process.env.EMAIL},apolloclinicsgurgaon@gmail.com,info@elf31.com`, subject: 'Form Filed on site Apollogurgaon.in', text: text, html: html });
       console.log(response);
       return res.status(200).json({ success: true });
-    } catch (err:any) {
+    } catch (err: any) {
       console.log(err);
       return res.status(400).json({ message: err.message });
     }

@@ -6,16 +6,16 @@ const apolloClinicData = [
     {
         title: "Advanced Technology",
         description: "We invest in the latest medical technology to ensure accurate and reliable results.",
-        img:'/images/advance.jpg'
+        img:'/images/advance.png'
     },
     {
         title: "Experienced Professionals",
-        img:'/images/professional.jpg',
+        img:'/images/professional.png',
         description: "Our team of expert healthcare professionals is dedicated to your well-being."
     },
     {
         title: "Convenient Location",
-        img:'/images/location.jpg',
+        img:'/images/location.png',
         description: "Located in Gurugram, we are easily accessible for all your healthcare needs."
     }
 ];
