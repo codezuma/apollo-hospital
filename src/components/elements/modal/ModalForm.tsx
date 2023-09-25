@@ -6,6 +6,7 @@ import React, { ChangeEvent, FormEvent, ReactNode, useContext, useRef, useState 
 import InputField from "../forms/InputField";
 import { Toaster, toast } from "react-hot-toast";
 import TextArea from "../forms/TextArea";
+import { useRouter } from "next/router";
 
 
 interface ModalType {
@@ -23,6 +24,7 @@ export default function ModalForm(props: any) {
     'message': ''
   }
   const [formData, setFormData] = useState(defaultFormData);
+  const router = useRouter();
 
   const sendMail = async (event: FormEvent) => {
     event.preventDefault();
@@ -31,6 +33,7 @@ export default function ModalForm(props: any) {
     try {
       await sendContactForm(formData);
       toast.success('Form Submitted');
+      router.push("/thank-you");
       closeModal();
     } catch (error) {
       toast.error('Error Accured',{position:'top-center'});

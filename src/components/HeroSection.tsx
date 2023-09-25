@@ -2,6 +2,7 @@ import { ModalContext } from "@/pages/_app";
 import { ArrowUturnDownIcon } from "@heroicons/react/24/solid"
 import Image from "next/image";
 import { useContext } from "react";
+import ContactFormSmall from "./contactFormSmall";
 const services = [{
     name: "root-canal",
     desc: "Save your infected tooth and alleviate your pain with our expert root canal treatment."
@@ -47,9 +48,12 @@ export default function HeroSection() {
                 </div>
             </div>
             <div className="md:w-1/2 w-full flex   items-end justify-end">
-                <figure className=" rotate-12 overflow-hidden rounded-3xl ">
+                {/* <figure className=" rotate-12 overflow-hidden rounded-3xl ">
                     <Image alt="hero-image" src="/images/hero-image-2.png" height={1200} width={1200}></Image>
-                </figure>
+                </figure> */}
+                <div className="p-4 w-full bg-gray-50 rounded-md ">
+                    <ContactFormSmall className='p-0 md:w-[125%]'/>
+                </div>
             </div>
         </div>
         <section id="services" className="container-main w-full md:mb-20  flex flex-col justify-center items-center">
