@@ -59,7 +59,11 @@ export default function Home() {
       <HeroSection></HeroSection>
       <FeatureSection />
       <AboutSection></AboutSection>
-
+      <div className='fixed bottom-8 right-4'>
+        <button onClick={()=>openModal(true)} className='btn-primary'>
+          Contact us
+        </button>
+      </div>
       <ContactForm></ContactForm>
       <div className='container-main w-full '>
         <h3 className='text-3xl font-semibold mb-4'>Location</h3>
