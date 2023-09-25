@@ -35,10 +35,7 @@ const testimonialsData = [
 
 export default function Home() {
   const [openModal, closeModal] = useContext(ModalContext);
-  useEffect(() => {
-    openModal(true);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+
   return (
     <>
           <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11108610629" />
