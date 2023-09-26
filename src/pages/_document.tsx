@@ -5,8 +5,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head >
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11108610629" />
-
       </Head>
       <body>
         <Main />
