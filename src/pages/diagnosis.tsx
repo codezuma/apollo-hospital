@@ -38,7 +38,14 @@ export default function Home() {
 
   return (
     <>
-          <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11108610629" />
+
+      <Head>
+        <title>Apollo Dental Clinic Gurgaon</title>
+        <meta name="description" content="Get world-className dental care at Apollo Dental Clinic in Gurgaon. Our experienced dentists provide a wide range of services, including routine check-ups, orthodontics, and cosmetic dentistry. Book your appointment today and achieve a healthy, beautiful smile!" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.svg" />
+      </Head>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11108610629" />
           <Script id="google-analytics" strategy="afterInteractive" >{`
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -47,12 +54,6 @@ export default function Home() {
   gtag('config', 'AW-11108610629');
 `}
       </Script>
-      <Head>
-        <title>Apollo Dental Clinic Gurgaon</title>
-        <meta name="description" content="Get world-className dental care at Apollo Dental Clinic in Gurgaon. Our experienced dentists provide a wide range of services, including routine check-ups, orthodontics, and cosmetic dentistry. Book your appointment today and achieve a healthy, beautiful smile!" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
       <HeroSection></HeroSection>
       <FeatureSection />
       <AboutSection></AboutSection>

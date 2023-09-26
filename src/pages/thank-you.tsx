@@ -7,11 +7,9 @@ const ThankyouPage = () => {
   return (
     <>
       <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=AW-11345315403"
-      />
+        async src="https://www.googletagmanager.com/gtag/js?id=AW-11108610629"      />
       <Script id="google-analytics" strategy="afterInteractive">
-        {`  gtag('event', 'conversion', {'send_to': 'AW-11345315403/A13hCLz_0uQYEMuM76Eq'});`}
+        {`    gtag('event', 'conversion', {'send_to': 'AW-11108610629/JG_tCLv5ouUYEMXk_7Ap'});`}
       </Script>
       <div className="bg-gray-100 md:mt-60 mt-20 w-full ">
         <div className="bg-white p-6 w-full md:mx-auto">
