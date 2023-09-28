@@ -45,15 +45,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11108610629" />
-          <Script id="google-analytics" strategy="afterInteractive" >{`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-CDEK34SL2X"/>
 
-  gtag('config', 'AW-11108610629');
+<Script id="google-analytics" strategy="afterInteractive" >{`
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-CDEK34SL2X');
 `}
-      </Script>
+</Script>
       <HeroSection></HeroSection>
       <FeatureSection />
       <AboutSection></AboutSection>
