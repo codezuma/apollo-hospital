@@ -50,12 +50,12 @@ export default function Navbar() {
                     <Image src={"/logo/logo.png"} className="w-20 md:w-32" width={120} height={60} alt={"elf31-logo"} />
                 </Link>
                 <section className="lg:flex  flex-col items-end gap-3">
-                    <nav>
+                    <nav className="flex gap-2">
                         <ul className="flex gap-5 items-center text-primary">
                             <button onClick={openModal} className="btn-primary text-base  py-2 px-4">Get in touch </button>
                         </ul>
                         <ul className="flex gap-5 items-center text-primary">
-                            <button className="btn-primary text-base  py-2 px-4"> <PhoneIcon className="mr-2" /> +91 8595807717 </button>
+                            <button className="flex items-center border-2  rounded-md text-base  py-2 px-4"> <PhoneIcon className="mr-2 w-4" /> +91 8595807717 </button>
                         </ul>
                     </nav>
                 </section>
