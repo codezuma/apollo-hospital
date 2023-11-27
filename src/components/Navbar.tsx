@@ -1,4 +1,4 @@
-import { Bars2Icon, ChevronDownIcon, XMarkIcon } from "@heroicons/react/24/solid"
+import { Bars2Icon, ChevronDownIcon, PhoneIcon, XMarkIcon } from "@heroicons/react/24/solid"
 import Image from "next/image"
 import Link from "next/link"
 import { useContext, useEffect, useRef, useState } from "react";
@@ -12,7 +12,7 @@ export default function Navbar() {
     const navbar = useRef<HTMLElement>(null);
     const navbarAfter = useRef<HTMLDivElement>(null);
     const router = useRouter();
-    const [openModal,closeModal] = useContext(ModalContext);
+    const [openModal, closeModal] = useContext(ModalContext);
 
     useEffect(() => {
         let container = document.getElementById('__next')!;
@@ -28,7 +28,7 @@ export default function Navbar() {
 
         setVisible(visible)
     };
-   
+
     const hideNavbar = () => {
         navbar.current?.classList.remove('animate-reveal', 'animation-delay-200');
         navbarAfter.current?.classList.remove('animate-reveal');
@@ -42,7 +42,7 @@ export default function Navbar() {
         navbar.current?.classList.add('animate-reveal', 'animation-delay-200');
         navbarAfter.current?.classList.add('animate-reveal');
     }
-    
+
     return <>
         <div className={`w-full sticky justify-center flex ${visible ? 'bg-transparent' : "bg-slate-100 shadow-md"}`}>
             <nav className={`container-main md:py-5 py-3 flex justify-between z-[60]    top-0 items-center w-full `}>
@@ -52,7 +52,10 @@ export default function Navbar() {
                 <section className="lg:flex  flex-col items-end gap-3">
                     <nav>
                         <ul className="flex gap-5 items-center text-primary">
-                        <button onClick={openModal} className="btn-primary text-base  py-2 px-4">Get in touch </button>
+                            <button onClick={openModal} className="btn-primary text-base  py-2 px-4">Get in touch </button>
+                        </ul>
+                        <ul className="flex gap-5 items-center text-primary">
+                            <button className="btn-primary text-base  py-2 px-4"> <PhoneIcon className="mr-2" /> +91 8595807717 </button>
                         </ul>
                     </nav>
                 </section>
@@ -62,7 +65,7 @@ export default function Navbar() {
             </nav>
         </div>
 
-   {/*      <nav ref={navbar} className={`mobile-nav px-8 lg:px-20 z-[60] bg-white  fixed h-0  w-full overflow-x-scroll`}>
+        {/*      <nav ref={navbar} className={`mobile-nav px-8 lg:px-20 z-[60] bg-white  fixed h-0  w-full overflow-x-scroll`}>
             <div className="flex justify-between mb-4 md:py-8 py-6  items-center text-secondary ">
                 <span>
                     <Image width={80} height={80} src={"/logo/logo.png"} alt={""}></Image>
