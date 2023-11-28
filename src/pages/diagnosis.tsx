@@ -45,16 +45,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-CDEK34SL2X"/>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-CDEK34SL2X" />
 
-<Script id="google-analytics" strategy="afterInteractive" >{`
+      <Script id="google-analytics" strategy="afterInteractive" >{`
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-CDEK34SL2X');
 `}
-</Script>
+      </Script>
       <HeroSection></HeroSection>
       <FeatureSection />
       <AboutSection></AboutSection>
@@ -71,13 +71,13 @@ gtag('config', 'G-CDEK34SL2X');
         <h3 className='text-3xl font-semibold mb-4'>Location</h3>
         <div className="relative container-main rounded-lg w-full h-96">
           <iframe className="absolute top-0 left-0 w-full h-full"
-           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.1570084408786!2d77.09089271154531!3d28.474817875650086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18d6fec3ddc1%3A0x19af1c5aea0beee4!2sApollo%20Clinic%20Gurugram!5e0!3m2!1sen!2sin!4v1693973713983!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.1570084408786!2d77.09089271154531!3d28.474817875650086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18d6fec3ddc1%3A0x19af1c5aea0beee4!2sApollo%20Clinic%20Gurugram!5e0!3m2!1sen!2sin!4v1693973713983!5m2!1sen!2sin"
             frameBorder="0" style={{ border: 0 }} allowFullScreen aria-hidden="false" >
           </iframe>
         </div>
       </div>
       <CTASection></CTASection>
-      
+
       <Testimonials testimonials={testimonialsData} />
     </>
   )
