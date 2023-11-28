@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <>
 
-      
+
       <Head>
 
         <title>Apollo Dental Clinic Gurgaon</title>
@@ -49,26 +49,26 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-CDEK34SL2X"/>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-CDEK34SL2X" />
 
-  <Script id="google-analytics" strategy="afterInteractive" >{`
+      <Script id="google-analytics" strategy="afterInteractive" >{`
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-CDEK34SL2X');
   `}
-  </Script>
+      </Script>
       <HeroSection></HeroSection>
       <AboutSection></AboutSection>
       <ContactForm></ContactForm>
       <CTASection></CTASection>
       <div className='fixed flex gap-2 bottom-8 right-4'>
-        <button onClick={()=>openModal(true)} className='btn-primary'>
+        <button onClick={() => openModal(true)} className='btn-primary'>
           Contact us
         </button>
         <a href="https://api.whatsapp.com/send?phone=919205366132">
-        <img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"/>
+          <img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1" />
         </a>
       </div>
       <Testimonials testimonials={testimonialsData} />
