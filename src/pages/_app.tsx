@@ -1,16 +1,15 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import { createContext } from 'react';
+import { Fragment, createContext } from 'react';
 import { ModalContextProvider } from '@/components/elements/modal/useModal'
 import Head from 'next/head';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
-import Script from 'next/script';
 
 export const ModalContext = createContext<[(modal: any) => unknown, () => unknown]>([() => console.log('Open modal'), () => console.log('Close modal')]);
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <>
+  return <Fragment>
 
     <Head>
       <title>ELF31</title>
@@ -31,5 +30,5 @@ export default function App({ Component, pageProps }: AppProps) {
       </div>
     </ModalContextProvider>
 
-  </>
+  </Fragment>
 }
