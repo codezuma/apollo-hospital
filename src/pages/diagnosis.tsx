@@ -58,10 +58,13 @@ gtag('config', 'G-CDEK34SL2X');
       <HeroSection></HeroSection>
       <FeatureSection />
       <AboutSection></AboutSection>
-      <div className='fixed bottom-8 right-4'>
-        <button onClick={()=>openModal(true)} className='btn-primary'>
+      <div className='fixed flex gap-2 bottom-8 right-4'>
+        <button onClick={() => openModal(true)} className='btn-primary'>
           Contact us
         </button>
+        <a href="https://api.whatsapp.com/send?phone=919205366132">
+          <img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1" />
+        </a>
       </div>
       <ContactForm></ContactForm>
       <div className='container-main w-full '>
@@ -74,6 +77,7 @@ gtag('config', 'G-CDEK34SL2X');
         </div>
       </div>
       <CTASection></CTASection>
+      
       <Testimonials testimonials={testimonialsData} />
     </>
   )
