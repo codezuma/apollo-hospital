@@ -36,9 +36,8 @@ export default function HeroSection() {
                 <svg className="w-full h-full" viewBox="0 0 3000 3000" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="1500" cy="1500" r="1425" stroke="#5BA3BB" strokeWidth="150" />
                 </svg>
-
             </div>
-            <div className="md:w-1/2 w-full flex flex-col  justify-center items-start">
+            <div className="md:w-1/2 w-full flex flex-col  justify-start md:pt-20 items-start">
                 <h1 className="text-5xl leading-[1.1] mb-8  text-primary font-semibold">Get a Brighter Smile with the Best Dentist in Gurugram</h1>
                 <p className="font-medium leading-[1.2] mb-5 text-lg  text-gray-500">Welcome to Apollo Dental Gurugram, the leading dental clinic in Gurgaon that is committed to providing
                     exceptional dental care to patients of all ages.</p>
@@ -51,7 +50,7 @@ export default function HeroSection() {
                 {/* <figure className=" rotate-12 overflow-hidden rounded-3xl ">
                     <Image alt="hero-image" src="/images/hero-image-2.png" height={1200} width={1200}></Image>
                 </figure> */}
-                <div className="p-4 w-full bg-gray-50 rounded-md ">
+                <div className="p-4 w-full bg-[#0B304D] text-white rounded-md ">
                     <ContactFormSmall className='p-0 md:w-[125%]'/>
                 </div>
             </div>

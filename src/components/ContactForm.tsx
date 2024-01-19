@@ -14,6 +14,13 @@ interface ModalType {
   isOpen: boolean;
   toggle: () => void;
 }
+function downloadPDF() {
+  if(typeof window === 'undefined') return;
+  const link = document.createElement('a');
+  link.href = '/apollo-clinic-free-consultaion-card.pdf'; // Replace with your PDF file's URL
+  link.download = 'apollo-clinic-free-consultaion-card.pdf'; // The name of the downloaded file
+  link.dispatchEvent(new MouseEvent('click'));
+}
 
 export default function ContactForm(props: any) {
   const defaultFormData = {
@@ -33,6 +40,7 @@ export default function ContactForm(props: any) {
       await sendContactForm(formData);
       toast.success('Form Submitted');
       router.push("/thank-you");
+      downloadPDF();
     } catch (error) {
       toast('Error Acuured Please Try Again', { position: 'top-center' });
 
