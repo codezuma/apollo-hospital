@@ -14,7 +14,7 @@ We are committed to your smile.                </h2>
                 At Apollo Dental Gurugram, we understand the importance of maintaining optimal oral health, and we are committed to providing personalized care to meet the unique needs of each patient. We are the best dental clinic in Gurgaon because of our commitment to providing compassionate and professional care, and we strive to create a welcoming and comfortable environment for every patient. </p>
             </main>
             <figure className="overflow-hidden rounded-lg">
-                <Image className="w-full h-auto" src="/images/apollo-team.png" width={2000} height={850} alt="apollo-team"></Image>
+                <Image className="w-full h-auto" src="/images/apollo-team-2.png" width={2000} height={850} alt="apollo-team"></Image>
             </figure>
         </section>
     </>

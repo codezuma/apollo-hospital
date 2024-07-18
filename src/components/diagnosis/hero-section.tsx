@@ -3,13 +3,10 @@ import { ArrowUturnDownIcon } from "@heroicons/react/24/solid"
 import Image from "next/image";
 import { useContext } from "react";
 import ContactFormSmall from "../contactFormSmall";
+import DownloadPDf from "../download-pdf";
 
 const services = [
-    {
-        "name": "x-ray-services",
-        "img": "x-ray-services",
-        "desc": "Our cutting-edge X-ray facilities provide accurate and detailed imaging, ensuring swift and precise diagnoses."
-    },
+
     {
         "name": "Ultrasound",
         "img": "ultrasound",
@@ -55,7 +52,7 @@ export default function HeroSection() {
                 <h1 className="text-2xl text-secondary leading-[1.1] mb-2 font-semibold">Apollo Clinic Gurugram</h1>
                 <h1 className="text-5xl leading-[1.1] mb-8  text-primary font-semibold">Where You Can Get State-of-the-Art Health Tests You Can Trust!
                 </h1>
-                <p className="font-medium leading-[1.2] mb-5 text-lg  text-gray-500"> {`Apollo Clinic Gurugram is the ideal healthcare destination, offering a wide spectrum of diagnostic services in a convenient Gurugram location. Whether you're in need of "x-ray services nearby" or "ultrasound services in Gurugram," rest assured, we've got you covered.`}</p>
+                <p className="font-medium leading-[1.2] mb-5 text-lg  text-gray-500"> {`Apollo Clinic Gurugram is the ideal healthcare destination, offering a wide spectrum of Health Check Packages & Diagnostics services at Golf Course Road Gurugram.`}</p>
                 <div className="flex gap-8">
                     <button onClick={openModal} className="btn-primary"> Contact us</button>
                     <a href="#services" className="btn-secondary bg-white text-primary border-2 border-gray-200"> See Details</a>
@@ -75,9 +72,9 @@ export default function HeroSection() {
                 <h2 className="mb-4 text-3xl font-bold text-center sm:text-4xl md:text-[40px]" >
                     What We Offer
                 </h2>
-                <p className="text-base text-gray-600 font-medium md:w-3/4 w-full md:text-center text-start ">
-                    We provide an extensive range of services, including X-ray, ultrasound, echo, ECG, and TMT services. Additionally, we offer specialized fundus photography examination services to meet all your diagnostic requirements.                </p>
-            </main>
+                <Image className="w-full h-auto" src="/images/test-photo.jpg" width={2000} height={850} alt="apollo-team"></Image>
+                <DownloadPDf/>
+                   </main>
             <section className="grid-cols-12 grid gap-y-10  lg:gap-12 md:gap-4 gap-2 md:gap-y-0 w-full">
                 {services.map((service, index) => <ServiceCard key={index} index={index} service={service} />)}
             </section>
@@ -88,9 +85,9 @@ export default function HeroSection() {
 function ServiceCard({ service, index }: { service: { name: string, img: string, desc: string }, index: number }) {
     return <>
 
-        <div className="service  bg-white border md:col-span-4 col-span-12 border-gray-200 rounded-lg shadow  md:last-of-type:flex  md:last-of-type:col-span-6 md:last-of-type:col-start-4">
+        <div className="service  bg-white border md:col-span-4 col-span-12 border-gray-200 rounded-lg shadow  ">
             <a href="" className="flex-1">
-                <Image height={500} width={500} className={`rounded-t-lg w-full h-[300px]  object-cover  ${(index == 6) ? "md:h-full" : ""}`} src={`/images/${service.img}.jpg`} alt="" />
+                <Image height={500} width={500} className={`rounded-t-lg w-full h-[300px]  object-cover `} src={`/images/${service.img}.jpg`} alt="" />
             </a>
             <div className="p-5 flex-1">
                 <a href="#">

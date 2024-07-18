@@ -42,7 +42,7 @@ export default function HeroSection() {
                 <p className="font-medium leading-[1.2] mb-5 text-lg  text-gray-500">Welcome to Apollo Dental Gurugram, the leading dental clinic in Gurgaon that is committed to providing
                     exceptional dental care to patients of all ages.</p>
                 <div className="flex gap-8">
-                    <button onClick={openModal} className="btn-primary"> Contact us</button>
+                    <button onClick={openModal} className="btn-primary"> Book Appointment</button>
                     <a href="#services" className="btn-secondary bg-white text-primary border-2 border-gray-200"> See Details</a>
                 </div>
             </div>

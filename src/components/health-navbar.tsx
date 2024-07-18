@@ -7,7 +7,7 @@ import { ModalContext } from "@/pages/_app";
 
 
 
-export default function Navbar() {
+export default function HeathNavbar() {
     const [visible, setVisible] = useState(true);
     const navbar = useRef<HTMLElement>(null);
     const navbarAfter = useRef<HTMLDivElement>(null);
@@ -52,7 +52,7 @@ export default function Navbar() {
                 <section className="lg:flex  flex-col items-end gap-3">
                     <nav className="flex gap-2">
                         <ul className="flex gap-5 items-center text-primary">
-                            <button onClick={openModal} className="btn-primary md:text-base text-sm  md:py-2 md:px-4">Book Appointment  </button>
+                            <button onClick={openModal} className="btn-primary md:text-base text-sm  md:py-2 md:px-4">Book Your Test  </button>
                         </ul>
                         <ul className="flex gap-5 items-center text-primary">
                             <button className="flex items-center border-2  rounded-md text-base  py-2 px-4"> <PhoneIcon className="mr-2 w-4" /> +91 99901 23800 </button>

@@ -14,7 +14,7 @@ export default function AboutSection() {
                     {`When you search for "diagnostics near me in Gurugram," think of Apollo Clinic Gurugram as your trusted healthcare partner. Your health matters to us, and we're committed to providing you with top-notch diagnostic services.`}                 </p>
             </main>
             <figure className="overflow-hidden rounded-lg">
-                <Image className="w-full h-auto" src="/images/apollo-team.png" width={2000} height={850} alt="apollo-team"></Image>
+                <Image className="w-full h-auto" src="/images/apollo-team-2.png" width={2000} height={850} alt="apollo-team"></Image>
             </figure>
         </section>
     </>

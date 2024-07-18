@@ -58,13 +58,12 @@ export default function ContactFormSmall(props: any) {
       <div className={` w-full flex justify-start items-center`} >
         <Toaster></Toaster>
         <form ref={formRef} className="w-full flex-col flex" onSubmit={(e: FormEvent<HTMLFormElement>) => sendMail(e)}  >
-          <h2 className="text-white  text-2xl font-semibold px-4 mb-2">Get 2 Free Consultations & Enjoy a special limited-time discount</h2>
-          <p className="text-gray-300 px-4 mb-6"> Enjoy a special limited-time discount.  </p>
+          <h2 className="text-black mb-4  text-2xl font-semibold px-4 mb-2">Enjoy a special limited-time discount</h2>
           <InputField required={true} onChange={(event: ChangeEvent<HTMLInputElement>) => { handleChange(event) }} name={"name"}  Icon={UserIcon} type={"text"}></InputField>
           <InputField required={false} onChange={(event: ChangeEvent<HTMLInputElement>) => { handleChange(event) }} name={"email"}  Icon={EnvelopeIcon} type={"email"}></InputField>
           <InputField required={true} onChange={(event: ChangeEvent<HTMLInputElement>) => { handleChange(event) }} name={"phoneNumber"}  Icon={PhoneIcon} type={"tel"}></InputField>
           <TextArea onChange={(event: ChangeEvent<HTMLTextAreaElement>) => { handleChange(event) }} name={"Message"} placeholder="Your message here" type={"email"} ></TextArea>
-          <button onClick={(e) => e.stopPropagation()} className="  justify-center btn-primary w-full flex gap-2 items-center btn-base ml-12 md:ml-0"> Get Free Consutation <GiftIcon className="w-6"/> </button>
+          <button onClick={(e) => e.stopPropagation()} className="  justify-center btn-primary w-full flex gap-2 items-center btn-base ml-12 md:ml-0"> Book Your Test <GiftIcon className="w-6"/> </button>
         </form>
       </div>
     </>
