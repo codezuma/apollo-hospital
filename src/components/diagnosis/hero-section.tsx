@@ -59,7 +59,7 @@ export default function HeroSection() {
                 </div>
             </div>
             <div className="md:w-1/2 w-full flex   items-end justify-end">
-            <div className="p-4 w-full bg-gray-50 rounded-md ">
+            <div className="p-4 w-full bg-[#0B304D] rounded-md ">
                     <ContactFormSmall className='p-0 md:w-[125%]'/>
                 </div>
             </div>

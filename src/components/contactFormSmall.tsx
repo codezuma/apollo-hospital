@@ -58,7 +58,7 @@ export default function ContactFormSmall(props: any) {
       <div className={` w-full flex justify-start items-center`} >
         <Toaster></Toaster>
         <form ref={formRef} className="w-full flex-col flex" onSubmit={(e: FormEvent<HTMLFormElement>) => sendMail(e)}  >
-          <h2 className="text-black mb-4  text-2xl font-semibold px-4 mb-2">Enjoy a special limited-time discount</h2>
+          <h2 className="text-white mb-4 text-2xl font-semibold px-4 mb-2">Enjoy a special limited-time discount</h2>
           <InputField required={true} onChange={(event: ChangeEvent<HTMLInputElement>) => { handleChange(event) }} name={"name"}  Icon={UserIcon} type={"text"}></InputField>
           <InputField required={false} onChange={(event: ChangeEvent<HTMLInputElement>) => { handleChange(event) }} name={"email"}  Icon={EnvelopeIcon} type={"email"}></InputField>
           <InputField required={true} onChange={(event: ChangeEvent<HTMLInputElement>) => { handleChange(event) }} name={"phoneNumber"}  Icon={PhoneIcon} type={"tel"}></InputField>
