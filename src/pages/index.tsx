@@ -12,6 +12,7 @@ import ContactForm from '@/components/ContactForm'
 import { useContext, useEffect } from 'react'
 import { ModalContext } from './_app'
 import Script from 'next/script'
+import DialogPopup from '@/components/dialog-popup'
 
 
 const testimonialsData = [
@@ -40,7 +41,7 @@ export default function Home() {
   return (
     <>
 
-
+      <DialogPopup />
       <Head>
 
         <title>Apollo Dental Clinic Gurgaon</title>
